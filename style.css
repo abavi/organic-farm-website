@@ -7,7 +7,8 @@
 
 body {
     background-color: var(--main-bg-color); 
-    font-family: "Baloo 2", cursive;   
+    font-family: "Baloo 2", cursive;
+    margin: 0;
 }
 
 header {
@@ -80,5 +81,32 @@ footer .nav-element {
     margin-left: 10px;
     font-size: 12px; 
     user-select: none;   
+}
+
+.content {
+    background-color: #808080;
+    width: 100%;
+    display: grid;
+    grid-template:  "content content"
+                    "produce meat"
+                    "produce meat";
+    grid-area: content;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shop {
+    background-color: aqua;
+}
+
+#produce {
+    background-color: yellow;
+    grid-area: produce; 
+    width: 100%;    
+}
+
+#meat {
+    background-color: red;
+    grid-area: meat;
+    width: 100%;
 }
 
