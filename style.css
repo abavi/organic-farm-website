@@ -84,29 +84,41 @@ footer .nav-element {
 }
 
 .content {
-    background-color: #808080;
-    width: 100%;
+    background-color: lightgoldenrodyellow;
+    width: 90%;
+    justify-content: center;   
     display: grid;
     grid-template:  "content content"
                     "produce meat"
                     "produce meat";
     grid-area: content;
     grid-template-columns: 1fr 1fr;
+    box-shadow: 10px 10px 8px #888888;
+    margin: auto;
 }
 
 .shop {
-    background-color: aqua;
+    background-color: aqua;   
 }
 
 #produce {
-    background-color: yellow;
+    background-color: lightgreen;
     grid-area: produce; 
     width: 100%;    
 }
 
 #meat {
-    background-color: red;
+    background-color: lightcoral;
     grid-area: meat;
     width: 100%;
+}
+
+.shop-title {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    grid-column: 1 / 3;    
 }
 
