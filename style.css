@@ -5,8 +5,8 @@ html, body {
     width: 100%;
     font-family: 'Rubik', sans-serif;
     color: #222;
+    background-color: #BDC2BE;
 }
-
 .navbar {
     padding: .8rem;
 }
@@ -210,7 +210,8 @@ hr .light {
     .social a {
         font-size: 2em;
         padding: .7rem;
-    }   
+    } 
+   
 }
 
 
