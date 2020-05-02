@@ -16,7 +16,7 @@ function required(email, pass)
          return false; 
       }
 
-      if(email.value == "plm@yahoo.com" && pass.value == "ddd") {        
+      if(email.value == "test@yahoo.com" && pass.value == "test") {        
         return true;
       } else {
           alert("E-mail or password incorrect!");
@@ -24,9 +24,10 @@ function required(email, pass)
       }           
     }
 
-    document.getElementById('loginButton').onclick = function () {
+    var loginButton = document.getElementById('loginButton');    
+    loginButton.onclick = function () { 
         var email = document.getElementById("email");
-        var pass = document.getElementById("password");
+        var pass = document.getElementById("password");      
         if(required(email, pass)){
             location.replace("index.html");
         }
